@@ -1,38 +1,37 @@
+* {
+  background-color: rgb(110, 101, 101);
+}
+
 #logo {
     height:100px;
     background-size: cover;
 }
-
 #name {
 background-color: white;
 padding: 5px;
-color: #734f4f;
+color: #734F4F;
 }
-
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #734f4f;
+    background-color: #734F4F;
     color: white;
     padding: 2%;
 }
-
 nav ul {
     display: flex;
 }
-
 nav ul li{
-    margin-left: 15px;
+   background color: rgb(110, 101, 101);
+   margin-left: 15px;
 }
-
 nav a {
     color: white;
     font-weight: 500;
     text-decoration: none;
     font-size: 16px;
 }
-
 #hero-image {
     height: 200px;
     background-image: url("desert.jpg");
@@ -41,53 +40,52 @@ nav a {
     position: relative;
     margin-bottom: 100px;
 }
-
 #hero-text {
     position: absolute;
     color: white;
     bottom: 10px;
     right: 20px;
 }
-
 .nav-section {
     display: flex;
     margin-bottom: 30px;
-
+    width: 100%;
 }
-
 main{
     max-width: 1250px;
     margin: 0 auto;
 }
-
 .section-heading {
     text-align: right;
-    border-right: 1px solid #106a88;
+    border-right: 1px solid #060606;
     width: 20%;
     font-size: 35px;
     margin-right: 30px;
+    padding-right: 20px;
 }
-
 .section-content {
-    width: 80%;
+    width: 100%;
+    display: flex;
 }
-
-
 .image-header {
     position: absolute;
-    bottom: 10px;
-    left: 20px;
+    bottom: 5px;
+    left: 10;
     color: white;
+    font-size: 20px;
 }
 
+/*  
 .boxes {
-    height: 100%;
+  display: grid;
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
     display: flex;
     flex-wrap: wrap;
     padding: 5px;
     justify-content: space-between;
 }
-
 .box1 {
     background-image: url("desert.jpg");
     height: 100px;
@@ -95,9 +93,9 @@ main{
     border-style: solid;
     border-width: 1px;
     padding: 10px;
-    flex: 1 0 0;
+    grid-column: 1 / span 2;
+    grid-row: 1;
 }
-
 .box2 {
     background-image: url("desert.jpg");
     height: 100px;
@@ -107,7 +105,6 @@ main{
     padding: 10px;
     flex: 1 0 0;
 }
-
 .box3 {
     background-image: url("desert.jpg");
     height: 100px;
@@ -115,9 +112,8 @@ main{
     border-style: solid;
     border-width: 1px;
     padding: 10px;
-    flex: 1 0 0;  
+    flex: 1 0 0;
 }
-
 .box4 {
     background-image: url("desert.jpg");
     height: 100px;
@@ -127,7 +123,6 @@ main{
     padding: 10px;
     flex: 1 0 0;
 }
-
 .box5 {
     background-image: url("desert.jpg");
     height: 100px;
@@ -136,16 +131,69 @@ main{
     border-width: 1px;
     padding: 10px;
     flex: 1 0 0;
+  */
 }
-
 .left {
     width: 20%;
     text-align: right;
     display: flex;
     justify-content: flex-end;
 }
-
 .boxes figure {
     width: 100%;
     min-width: 400px;
+}
+  /* .boxes {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    display: grid;
+  } */
+  .grid-container {
+    display: grid;
+    gap: 10px;
+
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+    height: 400px;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    position: relative;
+  }
+  .item1 {
+    background-image: url("desert.jpg");
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+  .item5 {
+    background-image: url("desert.jpg");
+    grid-column: 1 / span 3;
+    grid-row: 3;
+    
+  }
+  .item3 , .item4
+  {
+    background-image: url("desert.jpg");
+
+  }
+
+  .item3 a{
+    cursor: pointer;
+  }
+
+.contactnav {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.contactnav ul li {
+  display: flex;
+  flex-wrap: wrap;
+  color: #060606;
 }
